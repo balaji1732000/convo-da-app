@@ -733,7 +733,7 @@ button:hover{
     color: white;
 }
    
-   .bottoms{
+   /* .bottoms{
        display: flex;
        justify-content: space-between;
        background-color: #3279B7;
@@ -744,7 +744,28 @@ button:hover{
        padding-right: 50px;
        padding-top: 10px;
        padding-bottom: 0;
-   }
+   } */
+
+   .bottoms {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3279B7;
+    color: white;
+    /* padding: 10px 20px; */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* margin-top: 40px; */
+}
+
+.bottoms-content {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
    .landing-container{
     display: flex;
     justify-content: space-between;

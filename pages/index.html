@@ -54,12 +54,14 @@
             <nav class="navbar navbar-inverse navbar-fixed-top my-custom-navbar" role="navigation">
                 <div class="navbar-header">
                     <!-- <a class="navbar-brand" href="index.html">Conversational Data Analyser</a> -->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="../images/wipro-white-edited.webp" width="80" height="60" class="d-inline-block align-top" alt="">
                       </a>
-                      <a class="navbar-brand" href="index.html" style="color: white; margin-bottom: 30px;"><h2>Conversational Data Analyzer<span
-                        style="font-size: 1.2rem; margin-left: 10px"
-                        >Powered by Intel® Core™ Ultra Processor</span></h2></a>
+                      <a class="navbar-brand" href="index.html" style="color: white; margin-bottom: 30px;"><h3 class="text-white mb-0">
+                        Conversational Data Analyser</Data></Data><span
+                          style="font-size: 1.2rem; margin-left: 10px"
+                          >Powered by Intel® Core™ Ultra Processor</span></h3>
+                      </h3></a>
                     </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,13 +70,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-                <ul class="nav navbar-nav navbar-left navbar-top-links">
-                    <!-- <li><a href="#"><h3 class="text-white mb-0">Conversational Data Analyser<span style="font-size: 1.2rem; margin-left: 10px">Powered by Intel® Core™ Ultra Processor</span></h3> -->
-                    <!-- <li><a href="#" class="text-white mb-0"><h3 class="text-white mb-0">Conversational Data Analyser</h3> -->
-
-                    </a></li>
-                </ul>
 
                 <ul class="nav navbar-right navbar-top-links">
                     <li class="dropdown">
@@ -218,57 +213,6 @@
                 <p id="nullValues"></p>
                 <button class="btn btn-tertiary small" type="button" style="margin-left: 4px;">Edit Records</button>
 
-        
-                    <button id="openModalBtn">Open Modal</button>
-                    <div id="modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2>Review and Edit</h2>
-                            <input type="file" id="fileInput">
-                            <button id="editFileBtn">Edit File</button>
-                            <div id="fileDisplay"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Modals
-                            </div>
-                            <!-- /.panel-heading -->
-                            <div class="panel-body">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                    Launch Demo Modal
-                                </button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
-                                        </div>
-                                        <!-- /.modal-content -->
-                                    </div>
-                                    <!-- /.modal-dialog -->
-                                </div>
-                                <!-- /.modal -->
-                            </div>
-                            <!-- .panel-body -->
-                        </div>
-                        <!-- /.panel -->
-                    </div>
-
                 <!-- Add your review and edit functionality here -->
                 <button class="btn btn-primary pull-right" type="button" id="next-3">Next</button>
                 <button class="btn btn-default pull-left" type="button" id="prev-3">Previous</button>
@@ -286,7 +230,14 @@
                     <h3>Great! Data Uploaded Successfully. </h3>
                     <h5>Click finish button to generate insights</h5>
                 </div>
-                <button class="btn btn-success pull-right" type="submit" style="background-color: #3279B7;">Finish!</button>
+                <button class="btn btn-success pull-right" type="button" onclick="redirectToPage()" style="background-color: #3279B7;">Finish!</button>
+
+                <script>
+                function redirectToPage() {
+                  window.location.href = 'dataWizard.html';
+                }
+                </script>
+</script>
                 <button class="btn btn-default pull-left" type="button" id="prev-4">Previous</button>
             </div>
         </div>
