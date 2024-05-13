@@ -211,12 +211,12 @@
 
                 <div id="wizardContent">
                     <h4>Review the uploaded file and make necessary edits.</h4>
-                    <h5>Missing values (rows & columns) : </h5>
+                    <h5>Missing values (rows & columns) : 8 </h5>
                     <p id="missingValues"></p>
-                    <h5>Corrupted values :</h5>
+                    <h5>Corrupted values : 5</h5>
                     <p id="corruptedValues"></p>
-                    <h5>Null values :</h5>
-                    <p id="nullValues"></p>
+                    <!-- <h5>Null values :</h5>
+                    <p id="nullValues"></p> -->
                     <!-- File input button -->
                     <!-- <div class="uploadDiv">
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -225,6 +225,101 @@
                     <div class="uploadDiv">
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         <button type="button">Edit Records</button>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">EDIT MODAL</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>123-456-7890</td>
+                <td>123 Main St</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>456-789-0123</td>
+                <td>456 Elm St</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Michael Johnson</td>
+                <td>michaeljohnson@example.com</td>
+                <td>789-012-3456</td>
+                <td>789 Oak St</td>
+                <td>Chicago</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sarah Brown</td>
+                <td>sarahbrown@example.com</td>
+                <td>012-345-6789</td>
+                <td>012 Pine St</td>
+                <td>Houston</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>David Lee</td>
+                <td>davidlee@example.com</td>
+                <td>345-678-9012</td>
+                <td>345 Cedar St</td>
+                <td>Miami</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Emily Davis</td>
+                <td>emilydavis@example.com</td>
+                <td>678-901-2345</td>
+                <td>678 Birch St</td>
+                <td>Seattle</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Matthew Wilson</td>
+                <td>matthewwilson@example.com</td>
+                <td>901-234-5678</td>
+                <td>901 Maple St</td>
+                <td>San Francisco</td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
                     </div>
                 </div>
                 <!-- Add your review and edit functionality here -->
@@ -441,6 +536,11 @@ $(document).ready(function () {
 
         <!-- Custom Theme JavaScript -->
         <script src="../js/startmin.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
 
         <!-- bootstrap modal -->
         <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
